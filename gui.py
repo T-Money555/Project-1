@@ -26,7 +26,7 @@ class Ui_remote_menu(object):
         self.label_power = QtWidgets.QLabel(parent=remote_menu)
         self.label_power.setGeometry(QtCore.QRect(50, 30, 400, 350))
         self.label_power.setText("")
-        self.label_power.setPixmap(QtGui.QPixmap("black.png"))
+        self.label_power.setPixmap(QtGui.QPixmap("Pictures/black.png"))
         self.label_power.setScaledContents(True)
         self.label_power.setObjectName("label_power")
         self.vol_down = QtWidgets.QPushButton(parent=remote_menu)

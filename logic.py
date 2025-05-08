@@ -17,7 +17,7 @@ class Logic(QMainWindow, Ui_remote_menu):
         super().__init__()
         self.setupUi(self)
 
-        self.label_power.setPixmap(QtGui.QPixmap("black.png"))
+        self.label_power.setPixmap(QtGui.QPixmap("Pictures/black.png"))
         self.vol_slider.setEnabled(False)
 
         self.power.clicked.connect(lambda: self.tv_power())
@@ -48,7 +48,7 @@ class Logic(QMainWindow, Ui_remote_menu):
             self.vol_slider.setEnabled(True)
         else:
             self.__status = False
-            self.label_power.setPixmap(QtGui.QPixmap("black.png"))
+            self.label_power.setPixmap(QtGui.QPixmap("Pictures/black.png"))
             self.vol_slider.setEnabled(False)
 
     def mute(self) -> None:
@@ -67,63 +67,63 @@ class Logic(QMainWindow, Ui_remote_menu):
         """
         changes to channel 1
         """
-        self.label_power.setPixmap(QtGui.QPixmap("nbc.png"))
+        self.label_power.setPixmap(QtGui.QPixmap("Pictures/nbc.png"))
         self.__channel = 1
 
     def channel_2(self) -> None:
         """
         changes to channel 2
         """
-        self.label_power.setPixmap(QtGui.QPixmap("cn.png"))
+        self.label_power.setPixmap(QtGui.QPixmap("Pictures/cn.png"))
         self.__channel = 2
 
     def channel_3(self) -> None:
         """
         changes to channel 3
         """
-        self.label_power.setPixmap(QtGui.QPixmap("abc.png"))
+        self.label_power.setPixmap(QtGui.QPixmap("Pictures/abc.png"))
         self.__channel = 3
 
     def channel_4(self) -> None:
         """
         changes to channel 4
         """
-        self.label_power.setPixmap(QtGui.QPixmap("fox_news.png"))
+        self.label_power.setPixmap(QtGui.QPixmap("Pictures/fox_news.png"))
         self.__channel = 4
 
     def channel_5(self) -> None:
         """
         changes to channel 5
         """
-        self.label_power.setPixmap(QtGui.QPixmap("food_network.png"))
+        self.label_power.setPixmap(QtGui.QPixmap("Pictures/food_network.png"))
         self.__channel = 5
 
     def channel_6(self) -> None:
         """
         changes to channel 6
         """
-        self.label_power.setPixmap(QtGui.QPixmap("hgtv.png"))
+        self.label_power.setPixmap(QtGui.QPixmap("Pictures/hgtv.png"))
         self.__channel = 6
 
     def channel_7(self) -> None:
         """
         changes to channel 7
         """
-        self.label_power.setPixmap(QtGui.QPixmap("hallmark.png"))
+        self.label_power.setPixmap(QtGui.QPixmap("Pictures/hallmark.png"))
         self.__channel = 7
 
     def channel_8(self) -> None:
         """
         changes to channel 8
         """
-        self.label_power.setPixmap(QtGui.QPixmap("history.png"))
+        self.label_power.setPixmap(QtGui.QPixmap("Pictures/history.png"))
         self.__channel = 8
 
     def channel_9(self) -> None:
         """
         changes to channel 9
         """
-        self.label_power.setPixmap(QtGui.QPixmap("espn.png"))
+        self.label_power.setPixmap(QtGui.QPixmap("Pictures/espn.png"))
         self.__channel = 9
 
     def channel_up(self) -> None:
