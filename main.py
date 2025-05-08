@@ -5,6 +5,7 @@ def main():
     application = QApplication([])
     window = Logic()
     window.setGeometry(0, 0, 500, 700)
+    window.show()
     application.exec()
 
 if __name__ == "__main__":
